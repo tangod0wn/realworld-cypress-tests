@@ -1,0 +1,23 @@
+{
+    "name": "automation-exercise",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test:chrome": "cypress run --browser chrome",
+        "test:firefox": "cypress run --browser firefox",
+        "test:edge": "cypress run --browser edge",
+        "test:electron": "cypress run --browser electron",
+        "test:all-browsers": "npm run test:chrome && npm run test:firefox && npm run test:edge && npm run test:electron",
+        "test:api": "cypress run --spec 'cypress/e2e/api/'",
+        "test:ui": "cypress run --spec 'cypress/e2e/ui/'"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@eslint/js": "^9.2.0",
+        "cypress": "^13.9.0",
+        "cypress-downloadfile": "^1.2.3"
+    }
+}
